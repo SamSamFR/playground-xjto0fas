@@ -18,10 +18,12 @@ Vous obtiendrez une page web vierge de tout contenu.
 Par contre, si vous ouvrez la console du navigateur, vous obtiendrez alors le message "Hello worl!"
 
 Pour ouvrir la console du navigateur, voici les principaux raccourcis :
+
 - Firefox : Ctrl+Maj+K
 - Chrome, Chromium, Brave : Ctrl+Maj+I
 
 Le fichier HTML peut ressembler à ceci :
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -41,6 +43,7 @@ Le fichier HTML peut ressembler à ceci :
 # Les types en Javascript
 
 Nous distinguerons les 5 types suivants en JS :
+
 - booléen : true, false
 - numérique : 
   - entier :-10, 12, 42, ...
@@ -52,6 +55,7 @@ Nous distinguerons les 5 types suivants en JS :
 # Les constantes et les variables
 
 Pour manipuler des informations, nous pourrons utiliser deux types d'éléments : 
+
 - des constantes : définies par le mot clé *const*
 - des variables : définies par le mot clé *let*
 
