@@ -1,12 +1,44 @@
-# Welcome!
+# Bienvenu sur ce cours de découverte de Javascript
 
-This Nodejs template lets you get started quickly with a simple working example using npm. If it is your first contribution then you should have a look at the [Getting Started](https://tech.io/doc/getting-started-create-playground) document.
+JavaScript (JS) est un langage de programmation de scripts principalement employé dans les pages web interactives [Wikipedia](https://fr.wikipedia.org/wiki/JavaScript).
 
+Nous allons voir comment créer de simples programmes JS permettant de réagir aux actions de l'utilisateur.
 
-The source code is on [GitHub](https://github.com/TechDotIO/nodejs-template), please feel free to come up with proposals to improve it.
+# Premier programme
 
+La première chose a faire est de créer un fichier HTML avec votre éditeur préféré, par exemple Visual Studio Code, et de créer une page web minimaliste. 
+Puis d'ajouter la ligne si dessous entre les balises <script> et </script>.
+Il ne reste plus qu'à ouvrir ce fichier sur votre navigateur préféré (Firefox, Chrome, Chromium, Brave, ...). Nous éviterons de travailler avec IE pendant ce cours.
 
-# Run Javascript
+```javascript runnable
+console.log("Hello world!");  // affiche "Hello world!" dans la console du navigateur Web
+```
+
+Vous obtiendrez une page web vierge de tout contenu.
+Par contre, si vous ouvrez la console du navigateur, vous obtiendrez alors le message "Hello worl!"
+
+Pour ouvrir la console du navigateur, voici les principaux raccourcis :
+- Firefox : Ctrl+Maj+K
+- Chrome, Chromium, Brave : Ctrl+Maj+I
+
+Le fichier HTML peut ressembler à ceci :
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello world!");
+    </script>
+</body>
+</html>
+```
+
+# Run Javascript (another test)
 
 ```javascript runnable
 var add = function (harry, larry) {  
@@ -16,6 +48,7 @@ var add = function (harry, larry) {
 const result = add(1973, 1993);  
 console.log(result);  //prints 3966
 ```
+
 # Hands-on Demo
 
 @[Luke, how many stars are there in these galaxies?]({ "stubs": ["universe.js"], "command": "node_modules/mocha/bin/mocha universe.spec.js --reporter list" })
