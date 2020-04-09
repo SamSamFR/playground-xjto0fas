@@ -5,6 +5,17 @@ This Nodejs template lets you get started quickly with a simple working example 
 
 The source code is on [GitHub](https://github.com/TechDotIO/nodejs-template), please feel free to come up with proposals to improve it.
 
+
+# Run Javascript
+
+```javascript runnable
+var add = function (harry, larry) {  
+  return harry + larry;  
+};
+
+const result = add(1973, 1993);  
+console.log(result);  //prints 3966
+```
 # Hands-on Demo
 
 @[Luke, how many stars are there in these galaxies?]({ "stubs": ["universe.js"], "command": "node_modules/mocha/bin/mocha universe.spec.js --reporter list" })
