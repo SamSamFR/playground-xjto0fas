@@ -89,7 +89,7 @@ Nous avons souvent besoin de conditionner l'exécution du code en fonction du r�
 
 ```javascript runnable
 function categoryAthletism(age) {
-  const category = "";
+  let category = "";
 
   if (age <= 6) { category = "Baby Athlé"; }
   else if (age <= 9) { category = "Ecole d'athlétisme"; }
@@ -134,6 +134,27 @@ Comme dans la plupart des langages, nous distinguerons deux types de boucles en 
 - les boucles pour lesquelles le nombre d'itérations est connue lors de l'écriture du code : boucle _for_
 - les boucles pour lesquelles le nombre d'itérations dépend d'éléments extérieurs : boucle _while_
 
+
+Considérons un premier exemple simple consistant à calculer la somme des entiers depuis 0 jusqu'à un entier donné.
+Comme nous l'avons vu au premier semestre, cette somme peut-être obtenue directement par la formule *n(n+1)/2* où *n* représente l'entier fourni en paramètre pour calculer la somme.
+
+Le programme suivant calcule itérativement la somme des entiers depuis 0 jusqu'à *i*, pour *i* variant de 0 à *n*.
+
+```javascript runnable
+function sumToN(n) {
+  return n*(n+1)/2;
+}
+
+const n = 10;
+
+for (let i = 0; i < n; i++) {
+  console.log("sumToN("+i+")="+sumToN(i));
+}
+```
+
+Considérons maintenant le jeu du "Bandit manchot" (One-Arm Bandit en Anglais). 
+Le programme suivant simule un tel jeu jusqu'à épuisement de l'argent disponible, avec une probabilité de gagner inférieure à 5%, pour des gains variants entre 1 et 10 euros.
+
 ```javascript runnable
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -163,15 +184,83 @@ function playOneArmBandit(monney) {
 console.log(playOneArmBandit(100));
 ```
 
-# Run Javascript (another test)
+# Structures de données : tableaux et objets
+
+Tous les calculs que nous avons effectués jusqu'à présents n'ont pas été sauvegardés.
+Or, nous pourrions souhaiter le faire.
+Nous disposons pour cela de deux structures de données :
+- les tableaux : ils permettent de stocker de manière contigue des informations de différents types, accessibles par leur position dans le tableau (de 0 à *n-1* où *n* correspond au nombre d'éléments stockés dans le tableau)
+- les objets : comme les tableaux, nous pouvons stocker des informations de différents types, mais nous pouvons les indexer par des clés, ce qui peut rendre leur manipulation plus aisée
+
+Reprenons l'exemple du bandit manchot et conservons la liste des gains réalisés par le joueur.
 
 ```javascript runnable
-let add = function (harry, larry) {
-  return harry + larry;
-};
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
-const result = add(1973, 1993);
-console.log(result); //prints 3966
+function playOneArmBandit(monney) {
+  const initialAmount = monney;
+  let amountMonneyPlayed = 0;
+  let amountWin = 0;
+  let gains = [];
+
+  while (monney > 0) {
+    monney--;
+    amountMonneyPlayed++;
+    if (Math.random() > 0.95) {
+      let gain = 1 + getRandomInt(10);
+      amountWin += gain;
+      monney += gain;
+      gains.push(gain);
+    }
+  }
+
+  console.log("gains: "+gains);
+  return (
+    "You start with " + initialAmount + " euros\n" +
+    "You win " + amountWin + " euros\n" +
+    "You spent " + amountMonneyPlayed + " euros\n"
+  );
+}
+console.log(playOneArmBandit(100));
+```
+
+Comme nous venons de le voir, la déclaration d'un tableau vide se fait simplement en affectant *[]* à une variable.
+L'ajout d'un élément au tableau est réalisé grâce à la fonction *push* 
+
+Pour illustrer le principe des objets, nous allons reprendre cet exemple et renvoyer un objet contenant toutes les informations que nous avions simplement affiché.
+
+```javascript runnable
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function playOneArmBandit(monney) {
+  let amountMonneyPlayed = 0;
+  let amountWin = 0;
+  let gains = [];
+  let all_informations = {};
+
+  all_informations.initialAmount = monney;
+  while (monney > 0) {
+    monney--;
+    amountMonneyPlayed++;
+    if (Math.random() > 0.95) {
+      let gain = 1 + getRandomInt(10);
+      amountWin += gain;
+      monney += gain;
+      gains.push(gain);
+    }
+  }
+
+  all_informations.gains = gains;
+  all_informations.amountWin = amountWin;
+  all_informations.amountMonneyPlayed = amountMonneyPlayed;
+
+  return all_informations;
+}
+console.log(playOneArmBandit(100));
 ```
 
 # Hands-on Demo
