@@ -13,7 +13,7 @@
 
 
 ```
-@[Launch the server]({ "stubs": ["map.css" "map.js", "index.html", "server.js"], "command": "node server.js" })
+@[Launch the server]({ "stubs": ["map.css", "map.js", "index.html", "server.js"], "command": "node server.js" })
 ```
 
 
