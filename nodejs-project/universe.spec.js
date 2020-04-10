@@ -16,7 +16,7 @@ for (let i = 0; i < 10; i ++) {
     try {
       assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
     } catch (error) { 
-      printMessage('Hint 💡', 'Did you properly accumulate all stars into \'totalStars\'? 🤔');
+      printMessage('Error', 'Test '+i+' failed');
       throw error;
     }
   });
@@ -48,9 +48,11 @@ it('should sum stars', function () {
 
 function makeGalaxies() {
   let galaxies = [];
+
   for (let i = 0; i < 3+  Math.floor (Math.random() * 10 ); i++) {
     galaxies.push(1+Math.floor (Math.random() * 100 ));
   }
+
   return galaxies;
 }
 
