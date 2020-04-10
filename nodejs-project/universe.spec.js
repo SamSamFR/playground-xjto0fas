@@ -17,9 +17,9 @@ for (let i = 0; i < 10; i ++) {
         assert.equal(1,1);
     }
       else { assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies)); }
-      printMessage('Succes', 'Test '+i+' succed');
+      printMessage('success', '✓ Test '+i+' succed');
     } catch (error) { 
-      printMessage('Error', 'Test '+i+' failed');
+      printMessage('error', 'Test '+i+' failed');
       throw error;
     }
   });
