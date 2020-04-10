@@ -11,7 +11,9 @@ Array.prototype.reduce = function () {
 it('should sum stars', function () {
   try {
     let galaxies;
-    galaxies = [1, 2, 3]; assert.equal(6, universe.countAllStars(galaxies));
+    galaxies = [1, 2, 3]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    galaxies = [1, 2, 3, 4, 5]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    galaxies = [1, 2, 4, 5]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
     assert.equal(16, universe.countAllStars([10, 3, 2, 1]));
     assert.equal(42, universe.countAllStars([20, 20, 2]));
 
