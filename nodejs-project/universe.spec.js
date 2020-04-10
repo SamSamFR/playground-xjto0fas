@@ -49,7 +49,7 @@ it('should sum stars', function () {
 function makeGalaxies() {
   let galaxies = [];
   for (let i = 0; i < 3+  Math.floor (Math.random() * 10 ); i++) {
-    galaxies.append(1+Math.floor (Math.random() * 100 ));
+    galaxies.push(1+Math.floor (Math.random() * 100 ));
   }
   return galaxies;
 }
