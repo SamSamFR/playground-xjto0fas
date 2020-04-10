@@ -46,15 +46,9 @@ function playOneArmBandit(monney) {
   }
 
   return (
-    'You start with ' +
-    initialAmount +
-    ' euros\n' +
-    'You win ' +
-    amountWin +
-    ' euros\n' +
-    'You spent ' +
-    amountMonneyPlayed +
-    ' euros\n'
+    'You start with ' + initialAmount + ' euros\n' +
+    'You win ' + amountWin + ' euros\n' +
+    'You spent ' + amountMonneyPlayed + ' euros\n'
   );
 }
 console.log(playOneArmBandit(100));
