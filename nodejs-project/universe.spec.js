@@ -8,14 +8,25 @@ Array.prototype.reduce = function () {
   return superReduce.apply(this, arguments);
 };
 
+
+it('should sum stars (2)', function () {
+  try {
+    let galaxies;
+    galaxies = [1, 2, 3]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    galaxies = [20, 20, 2]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    galaxies = [100, 30, 12, 15]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+  } catch (error) { 
+    printMessage('Hint 💡', 'Did you properly accumulate all stars into \'totalStars\'? 🤔');
+    throw error;
+  }
+});
+
 it('should sum stars', function () {
   try {
     let galaxies;
     galaxies = [1, 2, 3]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-    galaxies = [1, 2, 3, 4, 5]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-    galaxies = [1, 2, 4, 5]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-    assert.equal(16, universe.countAllStars([10, 3, 2, 1]));
-    assert.equal(42, universe.countAllStars([20, 20, 2]));
+    galaxies = [20, 20, 2]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    galaxies = [10, 3, 2, 1]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
 
     if (reduceUsed) {
       printMessage('My personal Yoda, you are. 🙏', '* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ');
