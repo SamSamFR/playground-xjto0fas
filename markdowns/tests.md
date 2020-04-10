@@ -4,7 +4,7 @@ Nous avons souvent besoin de conditionner l'exécution du code en fonction du r�
 
 ```javascript runnable
 function categoryAthletism(age) {
-  let category = "";
+  let category = '';
 
   if (age <= 6) { category = "Baby Athlé"; }
   else if (age <= 9) { category = "Ecole d'athlétisme"; }
