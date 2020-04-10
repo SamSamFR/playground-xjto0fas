@@ -2,13 +2,13 @@
 
 Comme dans la plupart des langages, nous distinguerons deux types de boucles en JavaScript :
 
-- les boucles pour lesquelles le nombre d'itérations est connue lors de l'écriture du code : boucle _for_
-- les boucles pour lesquelles le nombre d'itérations dépend d'éléments extérieurs : boucle _while_
+- les boucles pour lesquelles le nombre d'itérations est connue lors de l'écriture du code : boucle `for`
+- les boucles pour lesquelles le nombre d'itérations dépend d'éléments extérieurs : boucle `while`
 
 Considérons un premier exemple simple consistant à calculer la somme des entiers depuis 0 jusqu'à un entier donné.
-Comme nous l'avons vu au premier semestre, cette somme peut-être obtenue directement par la formule _n(n+1)/2_ où _n_ représente l'entier fourni en paramètre pour calculer la somme.
+Comme nous l'avons vu au premier semestre, cette somme peut-être obtenue directement par la formule `n(n+1)/2` où `n` représente l'entier fourni en paramètre pour calculer la somme.
 
-Le programme suivant calcule itérativement la somme des entiers depuis 0 jusqu'à _i_, pour _i_ variant de 0 à _n_.
+Le programme suivant calcule itérativement la somme des entiers depuis 0 jusqu'à `i`, pour `i` variant de 0 à `n`.
 
 ```javascript runnable
 function sumToN(n) {
