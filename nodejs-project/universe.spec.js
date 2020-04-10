@@ -9,17 +9,18 @@ Array.prototype.reduce = function () {
 };
 
 
-it('should sum stars (2)', function () {
-  try {
-    let galaxies;
-    galaxies = [1, 2, 3]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-    galaxies = [20, 20, 2]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-    galaxies = [100, 30, 12, 15]; assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
-  } catch (error) { 
-    printMessage('Hint 💡', 'Did you properly accumulate all stars into \'totalStars\'? 🤔');
-    throw error;
-  }
-});
+for (let i = 0; i < 10; i ++) {
+  let galaxies = makeGalaxies();
+
+  it('should sum stars', function () {
+    try {
+      assert.equal(countAllStarsAnswer(galaxies), universe.countAllStars(galaxies));
+    } catch (error) { 
+      printMessage('Hint 💡', 'Did you properly accumulate all stars into \'totalStars\'? 🤔');
+      throw error;
+    }
+  });
+}
 
 it('should sum stars', function () {
   try {
@@ -44,6 +45,14 @@ it('should sum stars', function () {
     throw error;
   }
 });
+
+function makeGalaxies() {
+  let galaxies = [];
+  for (let i = 0; i < 3+  Math.floor (Math.random() * 10 ); i++) {
+    galaxies.append(1+Math.floor (Math.random() * 100 ));
+  }
+  return galaxies;
+}
 
 function countAllStarsAnswer(galaxies){
   let totalStars = 0;
