@@ -21,6 +21,9 @@ plan:
 - title: Les structures de données
   statement: markdowns/structures.md
 
+- title: Quelques exemples
+  statement: markdowns/exemples.md
+
 projects:
   nodejs:
     root: /nodejs-project
