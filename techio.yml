@@ -1,7 +1,26 @@
 title: Introduction à JavaScript - Module M2206 - MMI1
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+- title: Intrduction
+  statement: markdowns/intro.md
+
+- title: Les types, variables et constantes
+  statement: markdowns/types_variables_constantes.md
+
+- title: Les fonctions
+  statement: markdowns/fonctions.md
+
+- title: Les tests
+  statement: markdowns/tests.md
+
+- title: Les opérateurs
+  statement: markdowns/operateurs.md
+
+- title: Les boucles
+  statement: markdowns/boucles.md
+
+- title: Les structures de données
+  statement: markdowns/structures.md
+
 projects:
   nodejs:
     root: /nodejs-project
