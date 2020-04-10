@@ -12,9 +12,6 @@
 
 
 
-```
-@[Launch the server]({ "stubs": ["map.js", "index.html", "server.js"], "command": "node server.js" })
-```
 
 
 Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/nodejs-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
