@@ -3,7 +3,8 @@
 Tous les calculs que nous avons effectués jusqu'à présents n'ont pas été sauvegardés.
 Or, nous pourrions souhaiter le faire.
 Nous disposons pour cela de deux structures de données :
-- les tableaux : ils permettent de stocker de manière contigue des informations de différents types, accessibles par leur position dans le tableau (de 0 à *n-1* où *n* correspond au nombre d'éléments stockés dans le tableau)
+
+- les tableaux : ils permettent de stocker de manière contigue des informations de différents types, accessibles par leur position dans le tableau (de 0 à `n-1` où `n` correspond au nombre d'éléments stockés dans le tableau)
 - les objets : comme les tableaux, nous pouvons stocker des informations de différents types, mais nous pouvons les indexer par des clés, ce qui peut rendre leur manipulation plus aisée
 
 Reprenons l'exemple du bandit manchot et conservons la liste des gains réalisés par le joueur.
@@ -30,18 +31,18 @@ function playOneArmBandit(monney) {
     }
   }
 
-  console.log("gains: "+gains);
+  console.log('gains: ' + gains);
   return (
-    "You start with " + initialAmount + " euros\n" +
-    "You win " + amountWin + " euros\n" +
-    "You spent " + amountMonneyPlayed + " euros\n"
+    'You start with ' + initialAmount + ' euros\n' +
+    'You win ' + amountWin + ' euros\n' +
+    'You spent ' + amountMonneyPlayed +' euros\n'
   );
 }
 console.log(playOneArmBandit(100));
 ```
 
-Comme nous venons de le voir, la déclaration d'un tableau vide se fait simplement en affectant *[]* à une variable.
-L'ajout d'un élément au tableau est réalisé grâce à la fonction *push* 
+Comme nous venons de le voir, la déclaration d'un tableau vide se fait simplement en affectant `[]` à une variable.
+L'ajout d'un élément au tableau est réalisé grâce à la fonction `push`
 
 Pour illustrer le principe des objets, nous allons reprendre cet exemple et renvoyer un objet contenant toutes les informations que nous avions simplement affiché.
 
