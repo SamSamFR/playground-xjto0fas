@@ -10,7 +10,7 @@
 
 Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/nodejs-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
-# Un autre test
+# Un second test
 
 # Template Resources
 
