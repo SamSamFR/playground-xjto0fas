@@ -12,12 +12,12 @@ Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/nodejs-t
 
 # Un second test
 ```
-@[Launch the server]({ "stubs": ["map/map.js", "map/index.html"], "command": "node server.js" })
+@[Launch the server]({ "stubs": ["map/index.html"], "command": "node server.js" })
 ```
 
 renders as:
 
-@[Launch the server]({ "stubs": ["map/map.js", "map/index.html"], "command": "node server.js" })
+@[Launch the server]({ "stubs": ["map/index.html"], "command": "node server.js" })
 
 
 # Template Resources
