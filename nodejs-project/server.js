@@ -1,5 +1,4 @@
-﻿﻿var code = require('./map/map.js');
-var express = require('express');
+﻿﻿var express = require('express');
 var app = express();
 var path = require('path');
 
@@ -8,10 +7,6 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/map/index.html'));
 });
 
-app.get('/ajax', function(req, res) {
-  console.log("/ajax is called on server");
-  res.send(code.hello());
-});
 
 console.log("Opening the server");
 app.listen(8080);
