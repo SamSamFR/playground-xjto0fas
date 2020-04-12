@@ -11,6 +11,14 @@
 Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/nodejs-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
 # Un second test
+```
+@[Launch the server]({ "stubs": ["map/map.js", "map/index.html"], "command": "node server.js" })
+```
+
+renders as:
+
+@[Launch the server]({ "stubs": ["map/map.js", "map/index.html"], "command": "node server.js" })
+
 
 # Template Resources
 

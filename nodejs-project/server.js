@@ -1,11 +1,11 @@
-﻿﻿var code = require('./code.js');
+﻿﻿var code = require('./map/map.js');
 var express = require('express');
 var app = express();
 var path = require('path');
 
 app.get('/', function(req, res) {
   console.log("/ is called on server");
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.sendFile(path.join(__dirname + '/map/index.html'));
 });
 
 app.get('/ajax', function(req, res) {
