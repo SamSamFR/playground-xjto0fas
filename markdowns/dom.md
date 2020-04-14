@@ -17,7 +17,7 @@ Cette API nous permettra de :
 - Modifier le contenu de la page web de manière interactive
 - D'effectuer toutes les modifications en local (pas d'échanges avec un serveur)
 
-## Modification du DOM
+## Modification du DOM
 
 Le langage JavaScript implémente l'API DOM et nous offre donc la possibilité de transformer l'arbre
 
@@ -28,7 +28,7 @@ Le langage JavaScript implémente l'API DOM et nous offre donc la possibilité d
 - On peut accéder aux propriétés des divers objets (document, nœud, élément, etc)
 - Des fonctions ou méthodes permettent d'agir sur ces objets
 
-## Les types de noeuds
+## Les types de noeuds
 
 - Nœuds de type élément : représente un élément HTML
   - Possibilité de changer les nœuds éléments, par ex. changer ses attributs
@@ -39,7 +39,7 @@ Le langage JavaScript implémente l'API DOM et nous offre donc la possibilité d
   - Nœud de type élément a des fils de type élément et/ou texte
   - Nœud de type élément est une feuille de l'arbre si c'est un élément vide
 
-## Les principaux objets du DOM
+## Les principaux objets du DOM
 
 Voir la référence sur [`MDN`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
@@ -49,7 +49,7 @@ Voir la référence sur [`MDN`](https://developer.mozilla.org/en-US/docs/Web/API
   - Element : nœuds éléments HTML
   - CharacterData : nœuds de texte
 
-## L'objet document
+## L'objet document
 
 L'object document modélise le document manipulé :
 
@@ -75,7 +75,7 @@ L'object document modélise le document manipulé :
 </html>
 ```
 
-## Objets de de type Node
+## Objets de de type Node
 
 Modélise tous les types de nœuds, que ce soit des élements ou non
 
@@ -125,7 +125,7 @@ Principales fonctionnalités des objets Node, voir le site [developer.mozilla.or
 </html>
 ```
 
-## Objet de type Element
+## Objet de type Element
 
 Généralement, on préfère parcourir le DOM en ignorant les nœuds de texte (notamment à cause des nœuds de texte vides)
 Les fonctionnalités des objets de type Element permettent de le faire simplement :
