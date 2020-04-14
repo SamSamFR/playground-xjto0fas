@@ -120,3 +120,15 @@ Principales fonctionnalités des objets Node, voir le site [developer.mozilla.or
 </body>
 </html>
 ```
+
+## Objet de type Element
+
+Généralement, on préfère parcourir le DOM en ignorant les nœuds de texte (notamment à cause des nœuds de texte vides)
+Les fonctionnalités des objets de type Element permettent de le faire simplement :
+
+- Liste des éléments fils : `e.children`
+- Nombre d'éléments fils : `e.childElementCount`
+- Premier/dernier fils qui est un élément : `e.firstElementChild` et `e.lastElementChild`
+- Frère suivant/précédent qui est un élément : `e.nextElementSibling` et `e.previousElementSibling`
+- Obtenir un attribut : `e.getAttribute(nomAttribut)`
+- Modifier un attribut : `e.setAttribute(nomAttribut, nouvelleValeur)`
