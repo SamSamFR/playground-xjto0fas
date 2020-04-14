@@ -22,7 +22,7 @@ Les variables peuvent être changés, alors que modifier une constante vous renv
 
 > Modifiez ce code afin qu'il puisse fonctionner
 > 
-> ```js runnable
+> ```javascript runnable
 > const nombre = 10;
 >
 > nombre = 5;
