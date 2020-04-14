@@ -18,6 +18,18 @@ Pour manipuler des informations, nous pourrons utiliser deux types d'éléments 
 - des constantes : définies par le mot clé `const`
 - des variables : définies par le mot clé `let`
 
+Les variables peuvent être changés, alors que modifier une constante vous renverra une erreur.
+
+> Modifiez ce code afin qu'il puisse fonctionner
+> 
+> ```javascript runnable
+> const nombre = 10;
+>
+> nombre = 5;
+>
+> console.log(nombre)
+> ```
+
 L'exemple ci-dessous illustre quelques utilisations des constants, variables et types vus précédemment.
 
 ```javascript runnable

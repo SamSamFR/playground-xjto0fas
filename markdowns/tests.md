@@ -2,6 +2,28 @@
 
 Nous avons souvent besoin de conditionner l'exécution du code en fonction du résultats de tests.
 
+```js
+if (condition) {
+  // la condition est vrai
+} else {
+  // la condition est fausse
+}
+```
+
+Il est aussi possible de chainer plusieurs conditions
+
+```js
+if (condition1) {
+  // condition1 est vrai
+  // condition2 peut être vrai ou fausse
+} else if (condition2) {
+  // condition1 est fausse et condition2 est vrai
+} else {
+  // toutes les conditions sont fausses
+}
+```
+
+
 ```javascript runnable
 function categoryAthletism(age) {
   let category = '';
