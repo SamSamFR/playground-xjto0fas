@@ -3,7 +3,26 @@
 Comme dans la plupart des langages, nous distinguerons deux types de boucles en JavaScript :
 
 - les boucles pour lesquelles le nombre d'itérations est connue lors de l'écriture du code : boucle `for`
+
+  ```javascript runnable
+  const n = 10;
+
+  for (let i = 0; i < n; i++) {
+    console.log('index=', i);
+  }
+  ```
+
 - les boucles pour lesquelles le nombre d'itérations dépend d'éléments extérieurs : boucle `while`
+
+  ```javascript runnable
+  const n = 10;
+  let i = 0;
+
+  while (i < n) {
+    console.log('index=', i);
+    i++;
+  }
+  ```
 
 Considérons un premier exemple simple consistant à calculer la somme des entiers depuis 0 jusqu'à un entier donné.
 Comme nous l'avons vu au premier semestre, cette somme peut-être obtenue directement par la formule `n(n+1)/2` où `n` représente l'entier fourni en paramètre pour calculer la somme.
