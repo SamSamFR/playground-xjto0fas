@@ -16,3 +16,11 @@ Dans les exemples précédents, nous avons vu différents opérateurs permettant
   - supérieur ou égal : `>=`
 - chaîne de caractères
   - concaténation : `+`
+
+```javascript runnable
+//Pour tester
+let a = 10;
+let b = 5;
+console.log('a = ' + a);
+console.log('b = ' + b);
+```
