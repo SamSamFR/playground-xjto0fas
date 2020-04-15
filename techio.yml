@@ -23,10 +23,12 @@ plan:
 
   - title: Quelques exemples
     statement: markdowns/exemples.md
-    
+
   - title: Document object model
     statement: markdowns/dom.md
-    
+
+  - title: Exercices
+    statement: markdowns/exercices.md
 projects:
   nodejs:
     root: /nodejs-project
