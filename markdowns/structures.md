@@ -4,7 +4,7 @@ Tous les calculs que nous avons effectués jusqu'à présents n'ont pas été sa
 Or, nous pourrions souhaiter le faire.
 Nous disposons pour cela de deux structures de données :
 
-- les tableaux : ils permettent de stocker de manière contigue des informations de différents types, accessibles par leur position dans le tableau (de 0 à `n-1` où `n` correspond au nombre d'éléments stockés dans le tableau)
+- les tableaux : ils permettent de stocker de manière contigue des informations de différents types, accessibles par leur position dans le tableau (de `0` à `n-1` où `n` correspond au nombre d'éléments stockés dans le tableau)
 - les objets : comme les tableaux, nous pouvons stocker des informations de différents types, mais nous pouvons les indexer par des clés, ce qui peut rendre leur manipulation plus aisée
 
 Reprenons l'exemple du bandit manchot et conservons la liste des gains réalisés par le joueur.

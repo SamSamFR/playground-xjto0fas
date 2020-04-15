@@ -1,7 +1,7 @@
 # Document Object Model
 
 Le cours de Jean-Marc Lecarpentier et Alexandre Niveau disponible à l'[`Université de Caen`](https://ensweb.users.info.unicaen.fr/pres/jml/dom/index.php) présente très bien les concepts du DOM qui vont nous intéresser ici.
-Ce support est largement inspiré du contenu de ce cous.
+Ce support est largement inspiré du contenu de ce cours.
 
 Pour manipuler le DOM, nous écrirons des programmes en JavaScript qui seront exécutés par le navigateur
 
@@ -57,7 +57,7 @@ L'object document modélise le document manipulé :
 - L'élément `<body>` du document : `document.body`
 - Obtenir un élément par son identifiant : `document.getElementById('myId')`
 
-```html
+```html runnable
 <!DOCTYPE html>
 <html lang="en">
   <head>
