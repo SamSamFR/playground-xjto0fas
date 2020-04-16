@@ -58,7 +58,7 @@ function playOneArmBandit(monney) {
     monney--;
     amountMonneyPlayed++;
     if (Math.random() > 0.95) {
-      let gain = 1 + getRandomInt(10);
+      const gain = 1 + getRandomInt(10);
       amountWin += gain;
       monney += gain;
     }
