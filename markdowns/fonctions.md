@@ -2,7 +2,7 @@
 
 JavaScript offre, comme tous les langages, la possibilité de définir ses propres fonctions.
 
-Les fonctions peuvent renvoyer une valeur grâce au mot clé `return`, mais il est optionnel.
+Les fonctions peuvent renvoyer une valeur grâce au mot clé `return`, mais ce n'est pas obligatoire.
 
 ```javascript runnable
 // fonction sans return
